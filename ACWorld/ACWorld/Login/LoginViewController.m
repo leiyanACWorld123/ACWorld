@@ -150,7 +150,20 @@ static NSInteger count = 30;
             make.width.equalTo(buttomView.mas_width).dividedBy(4);
             i==0?make.left.equalTo(buttomView.mas_left).offset(0):make.right.equalTo(buttomView.mas_right).offset(0);
         }];
+        
+        UIButton *button = [UIButton buttonWithType:UIButtonTypeCustom];
+        button.tag = i;
+        [button setTitle:@[@"QQ",@"微信"][i] forState:UIControlStateNormal];
+        [button setTitleColor:[UIColor blackColor] forState:UIControlStateNormal];
+        [self.view addSubview:button];
+        [button addTarget:self action:@selector(otherLogin:) forControlEvents:UIControlEventTouchUpInside];
+        [button mas_makeConstraints:^(MASConstraintMaker *make) {
+            make.top.equalTo(buttomView.mas_bottom).offset(30);
+            make.left.equalTo(self.view.mas_left).offset((self.view.width / 4) * (1+i*2) - 25);
+            make.size.mas_offset(CGSizeMake(50, 50));
+        }];
     }
+    
     
     
 }
@@ -184,5 +197,28 @@ static NSInteger count = 30;
     
 }
 
+#pragma mark - 第三方登录（qq，微信）
+-(void)otherLogin:(UIButton *)btn{
+    switch (btn.tag) {
+        case 0:
+            [self qqLogin];
+            break;
+        case 1:
+            [self weixinLogin];
+            break;
+    
+        default:
+            break;
+    }
+}
 
+//qq登录
+-(void)qqLogin{
+    
+}
+
+//微信登录
+-(void)weixinLogin{
+    
+}
 @end
