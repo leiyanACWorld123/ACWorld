@@ -7,12 +7,19 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0BBAC4B265BBF13CDA520D94 /* libPods-ACWorld.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 7AA9220AA56B3935FA5950EC /* libPods-ACWorld.a */; };
 		183DCD651D010EA700710703 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 183DCD641D010EA700710703 /* main.m */; };
 		183DCD681D010EA700710703 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 183DCD671D010EA700710703 /* AppDelegate.m */; };
 		183DCD6B1D010EA700710703 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 183DCD6A1D010EA700710703 /* ViewController.m */; };
 		183DCD6E1D010EA700710703 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 183DCD6C1D010EA700710703 /* Main.storyboard */; };
 		183DCD701D010EA700710703 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 183DCD6F1D010EA700710703 /* Assets.xcassets */; };
 		183DCD731D010EA800710703 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 183DCD711D010EA800710703 /* LaunchScreen.storyboard */; };
+		183DCD8B1D010F7F00710703 /* LoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 183DCD7D1D010F7F00710703 /* LoginViewController.m */; };
+		183DCD8C1D010F7F00710703 /* LyCustomLoginTextField.m in Sources */ = {isa = PBXBuildFile; fileRef = 183DCD801D010F7F00710703 /* LyCustomLoginTextField.m */; };
+		183DCD8D1D010F7F00710703 /* MyUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = 183DCD821D010F7F00710703 /* MyUtil.m */; };
+		183DCD8E1D010F7F00710703 /* UIView+Category.m in Sources */ = {isa = PBXBuildFile; fileRef = 183DCD851D010F7F00710703 /* UIView+Category.m */; };
+		183DCD8F1D010F7F00710703 /* LyMatchScreen.m in Sources */ = {isa = PBXBuildFile; fileRef = 183DCD881D010F7F00710703 /* LyMatchScreen.m */; };
+		183DCD901D010F7F00710703 /* MBProgressHUD.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 183DCD8A1D010F7F00710703 /* MBProgressHUD.bundle */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +33,20 @@
 		183DCD6F1D010EA700710703 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		183DCD721D010EA800710703 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		183DCD741D010EA800710703 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		183DCD7C1D010F7F00710703 /* LoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoginViewController.h; sourceTree = "<group>"; };
+		183DCD7D1D010F7F00710703 /* LoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoginViewController.m; sourceTree = "<group>"; };
+		183DCD7F1D010F7F00710703 /* LyCustomLoginTextField.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LyCustomLoginTextField.h; sourceTree = "<group>"; };
+		183DCD801D010F7F00710703 /* LyCustomLoginTextField.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LyCustomLoginTextField.m; sourceTree = "<group>"; };
+		183DCD811D010F7F00710703 /* MyUtil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyUtil.h; sourceTree = "<group>"; };
+		183DCD821D010F7F00710703 /* MyUtil.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyUtil.m; sourceTree = "<group>"; };
+		183DCD841D010F7F00710703 /* UIView+Category.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Category.h"; sourceTree = "<group>"; };
+		183DCD851D010F7F00710703 /* UIView+Category.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Category.m"; sourceTree = "<group>"; };
+		183DCD871D010F7F00710703 /* LyMatchScreen.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LyMatchScreen.h; sourceTree = "<group>"; };
+		183DCD881D010F7F00710703 /* LyMatchScreen.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LyMatchScreen.m; sourceTree = "<group>"; };
+		183DCD8A1D010F7F00710703 /* MBProgressHUD.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = MBProgressHUD.bundle; sourceTree = "<group>"; };
+		7AA9220AA56B3935FA5950EC /* libPods-ACWorld.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-ACWorld.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		A0DD7A2629481DBB3CB2ACF1 /* Pods-ACWorld.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ACWorld.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ACWorld/Pods-ACWorld.debug.xcconfig"; sourceTree = "<group>"; };
+		F31649F27EF1743E1CC71E16 /* Pods-ACWorld.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ACWorld.release.xcconfig"; path = "Pods/Target Support Files/Pods-ACWorld/Pods-ACWorld.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -33,6 +54,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0BBAC4B265BBF13CDA520D94 /* libPods-ACWorld.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -44,6 +66,8 @@
 			children = (
 				183DCD621D010EA700710703 /* ACWorld */,
 				183DCD611D010EA700710703 /* Products */,
+				51C0D172FDCF811B4DEBC960 /* Pods */,
+				31DE0BD2D7077955F9772823 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -58,6 +82,10 @@
 		183DCD621D010EA700710703 /* ACWorld */ = {
 			isa = PBXGroup;
 			children = (
+				183DCD7E1D010F7F00710703 /* Tools */,
+				183DCD891D010F7F00710703 /* Until */,
+				183DCD7A1D010F7F00710703 /* Home */,
+				183DCD7B1D010F7F00710703 /* Login */,
 				183DCD661D010EA700710703 /* AppDelegate.h */,
 				183DCD671D010EA700710703 /* AppDelegate.m */,
 				183DCD691D010EA700710703 /* ViewController.h */,
@@ -79,6 +107,78 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		183DCD7A1D010F7F00710703 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		183DCD7B1D010F7F00710703 /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				183DCD7C1D010F7F00710703 /* LoginViewController.h */,
+				183DCD7D1D010F7F00710703 /* LoginViewController.m */,
+			);
+			path = Login;
+			sourceTree = "<group>";
+		};
+		183DCD7E1D010F7F00710703 /* Tools */ = {
+			isa = PBXGroup;
+			children = (
+				183DCD7F1D010F7F00710703 /* LyCustomLoginTextField.h */,
+				183DCD801D010F7F00710703 /* LyCustomLoginTextField.m */,
+				183DCD811D010F7F00710703 /* MyUtil.h */,
+				183DCD821D010F7F00710703 /* MyUtil.m */,
+				183DCD831D010F7F00710703 /* origin和size的直接赋值 */,
+				183DCD861D010F7F00710703 /* 屏幕适配 */,
+			);
+			path = Tools;
+			sourceTree = "<group>";
+		};
+		183DCD831D010F7F00710703 /* origin和size的直接赋值 */ = {
+			isa = PBXGroup;
+			children = (
+				183DCD841D010F7F00710703 /* UIView+Category.h */,
+				183DCD851D010F7F00710703 /* UIView+Category.m */,
+			);
+			path = "origin和size的直接赋值";
+			sourceTree = "<group>";
+		};
+		183DCD861D010F7F00710703 /* 屏幕适配 */ = {
+			isa = PBXGroup;
+			children = (
+				183DCD871D010F7F00710703 /* LyMatchScreen.h */,
+				183DCD881D010F7F00710703 /* LyMatchScreen.m */,
+			);
+			path = "屏幕适配";
+			sourceTree = "<group>";
+		};
+		183DCD891D010F7F00710703 /* Until */ = {
+			isa = PBXGroup;
+			children = (
+				183DCD8A1D010F7F00710703 /* MBProgressHUD.bundle */,
+			);
+			path = Until;
+			sourceTree = "<group>";
+		};
+		31DE0BD2D7077955F9772823 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				7AA9220AA56B3935FA5950EC /* libPods-ACWorld.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		51C0D172FDCF811B4DEBC960 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				A0DD7A2629481DBB3CB2ACF1 /* Pods-ACWorld.debug.xcconfig */,
+				F31649F27EF1743E1CC71E16 /* Pods-ACWorld.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -86,9 +186,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 183DCD771D010EA800710703 /* Build configuration list for PBXNativeTarget "ACWorld" */;
 			buildPhases = (
+				8C97371E569209FDF18E114F /* 📦 Check Pods Manifest.lock */,
 				183DCD5C1D010EA700710703 /* Sources */,
 				183DCD5D1D010EA700710703 /* Frameworks */,
 				183DCD5E1D010EA700710703 /* Resources */,
+				4D0605F602D1B7EDEBEAEA4E /* 📦 Embed Pods Frameworks */,
+				F90270DC0D256C1A1F6BB069 /* 📦 Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -137,6 +240,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				183DCD731D010EA800710703 /* LaunchScreen.storyboard in Resources */,
+				183DCD901D010F7F00710703 /* MBProgressHUD.bundle in Resources */,
 				183DCD701D010EA700710703 /* Assets.xcassets in Resources */,
 				183DCD6E1D010EA700710703 /* Main.storyboard in Resources */,
 			);
@@ -144,14 +248,67 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		4D0605F602D1B7EDEBEAEA4E /* 📦 Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "📦 Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ACWorld/Pods-ACWorld-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		8C97371E569209FDF18E114F /* 📦 Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "📦 Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		F90270DC0D256C1A1F6BB069 /* 📦 Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "📦 Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ACWorld/Pods-ACWorld-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		183DCD5C1D010EA700710703 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				183DCD8B1D010F7F00710703 /* LoginViewController.m in Sources */,
+				183DCD8E1D010F7F00710703 /* UIView+Category.m in Sources */,
+				183DCD8C1D010F7F00710703 /* LyCustomLoginTextField.m in Sources */,
 				183DCD6B1D010EA700710703 /* ViewController.m in Sources */,
+				183DCD8F1D010F7F00710703 /* LyMatchScreen.m in Sources */,
 				183DCD681D010EA700710703 /* AppDelegate.m in Sources */,
 				183DCD651D010EA700710703 /* main.m in Sources */,
+				183DCD8D1D010F7F00710703 /* MyUtil.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -261,6 +418,7 @@
 		};
 		183DCD781D010EA800710703 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A0DD7A2629481DBB3CB2ACF1 /* Pods-ACWorld.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = ACWorld/Info.plist;
@@ -272,6 +430,7 @@
 		};
 		183DCD791D010EA800710703 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F31649F27EF1743E1CC71E16 /* Pods-ACWorld.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = ACWorld/Info.plist;
@@ -300,6 +459,7 @@
 				183DCD791D010EA800710703 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
