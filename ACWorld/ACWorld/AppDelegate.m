@@ -8,6 +8,7 @@
 
 #import "AppDelegate.h"
 #import "LoginViewController.h"
+#import "MyUtil.h"
 
 @interface AppDelegate ()
 
@@ -24,8 +25,20 @@
     LoginViewController *loginVC = [[LoginViewController alloc]init];
     UINavigationController *loginNav = [[UINavigationController alloc]initWithRootViewController:loginVC];
     self.window.rootViewController = loginNav;
-    // Override point for customization after application launch.
+    
+    [self appearanceChange];
+    
     return YES;
+}
+
+-(void)appearanceChange
+{
+     [[UITabBarItem appearance] setTitleTextAttributes:[NSDictionary dictionaryWithObjectsAndKeys:[UIColor blackColor], NSForegroundColorAttributeName, nil] forState:UIControlStateNormal];
+     [[UITabBarItem appearance] setTitleTextAttributes:[NSDictionary dictionaryWithObjectsAndKeys:[UIColor colorWithRed:92/255.0 green:9/255.0 blue:16/255.0 alpha:1], NSForegroundColorAttributeName, nil] forState:UIControlStateSelected];
+     [[UITabBar appearance] setShadowImage:[MyUtil createImageFromColor:[UIColor colorWithRed:92/255.0 green:9/255.0 blue:16/255.0 alpha:1] imgSize:CGSizeMake(1, 1)]];
+    
+    [[UINavigationBar appearance]setBarTintColor:[UIColor colorWithRed:92/255.0 green:9/255.0 blue:16/255.0 alpha:1]];
+    [[UINavigationBar appearance]setTitleTextAttributes:@{NSForegroundColorAttributeName:[UIColor whiteColor]}];
 }
 
 - (void)applicationWillResignActive:(UIApplication *)application {

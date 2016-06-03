@@ -12,6 +12,7 @@
 #import "LyCustomLoginTextField.h"
 #import "LyMatchScreen.h"
 #import "MyUtil.h"
+#import "MyTabBarController.h"
 
 static NSInteger count = 30;
 
@@ -172,13 +173,16 @@ static NSInteger count = 30;
 }
 
 
-#pragma mark - 
+#pragma mark - 正常登录
 -(void)normalLogin{
-    
+    MyTabBarController *TabBarController = [[MyTabBarController alloc]init];
+    [self presentViewController:TabBarController animated:YES completion:nil];
 }
 
-#pragma mark -
+#pragma mark - 指纹登录
 -(void)figureLogin{
     
 }
+
+
 @end

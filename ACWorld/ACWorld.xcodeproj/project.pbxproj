@@ -19,6 +19,11 @@
 		183DCD8E1D010F7F00710703 /* UIView+Category.m in Sources */ = {isa = PBXBuildFile; fileRef = 183DCD851D010F7F00710703 /* UIView+Category.m */; };
 		183DCD8F1D010F7F00710703 /* LyMatchScreen.m in Sources */ = {isa = PBXBuildFile; fileRef = 183DCD881D010F7F00710703 /* LyMatchScreen.m */; };
 		183DCD901D010F7F00710703 /* MBProgressHUD.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 183DCD8A1D010F7F00710703 /* MBProgressHUD.bundle */; };
+		183DCD971D0112CD00710703 /* MyTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = 183DCD961D0112CD00710703 /* MyTabBarController.m */; };
+		183DCD9E1D01170D00710703 /* MessageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 183DCD9D1D01170D00710703 /* MessageViewController.m */; };
+		183DCDA41D01194900710703 /* WorldViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 183DCDA31D01194900710703 /* WorldViewController.m */; };
+		183DCDA71D01195300710703 /* MeetingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 183DCDA61D01195300710703 /* MeetingViewController.m */; };
+		183DCDAA1D01195C00710703 /* MineViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 183DCDA91D01195C00710703 /* MineViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -41,6 +46,16 @@
 		183DCD871D010F7F00710703 /* LyMatchScreen.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LyMatchScreen.h; sourceTree = "<group>"; };
 		183DCD881D010F7F00710703 /* LyMatchScreen.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LyMatchScreen.m; sourceTree = "<group>"; };
 		183DCD8A1D010F7F00710703 /* MBProgressHUD.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = MBProgressHUD.bundle; sourceTree = "<group>"; };
+		183DCD951D0112CD00710703 /* MyTabBarController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyTabBarController.h; sourceTree = "<group>"; };
+		183DCD961D0112CD00710703 /* MyTabBarController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyTabBarController.m; sourceTree = "<group>"; };
+		183DCD9C1D01170D00710703 /* MessageViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MessageViewController.h; sourceTree = "<group>"; };
+		183DCD9D1D01170D00710703 /* MessageViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MessageViewController.m; sourceTree = "<group>"; };
+		183DCDA21D01194900710703 /* WorldViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WorldViewController.h; sourceTree = "<group>"; };
+		183DCDA31D01194900710703 /* WorldViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WorldViewController.m; sourceTree = "<group>"; };
+		183DCDA51D01195300710703 /* MeetingViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MeetingViewController.h; sourceTree = "<group>"; };
+		183DCDA61D01195300710703 /* MeetingViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MeetingViewController.m; sourceTree = "<group>"; };
+		183DCDA81D01195C00710703 /* MineViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MineViewController.h; sourceTree = "<group>"; };
+		183DCDA91D01195C00710703 /* MineViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MineViewController.m; sourceTree = "<group>"; };
 		7AA9220AA56B3935FA5950EC /* libPods-ACWorld.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-ACWorld.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A0DD7A2629481DBB3CB2ACF1 /* Pods-ACWorld.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ACWorld.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ACWorld/Pods-ACWorld.debug.xcconfig"; sourceTree = "<group>"; };
 		F31649F27EF1743E1CC71E16 /* Pods-ACWorld.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ACWorld.release.xcconfig"; path = "Pods/Target Support Files/Pods-ACWorld/Pods-ACWorld.release.xcconfig"; sourceTree = "<group>"; };
@@ -81,6 +96,7 @@
 			children = (
 				183DCD7E1D010F7F00710703 /* Tools */,
 				183DCD891D010F7F00710703 /* Until */,
+				183DCD911D0111DA00710703 /* Main */,
 				183DCD7A1D010F7F00710703 /* Home */,
 				183DCD7B1D010F7F00710703 /* Login */,
 				183DCD661D010EA700710703 /* AppDelegate.h */,
@@ -105,6 +121,10 @@
 		183DCD7A1D010F7F00710703 /* Home */ = {
 			isa = PBXGroup;
 			children = (
+				183DCD9B1D0116FC00710703 /* Message */,
+				183DCDA11D01192C00710703 /* World */,
+				183DCD9F1D01192C00710703 /* Meeting */,
+				183DCDA01D01192C00710703 /* Mine */,
 			);
 			path = Home;
 			sourceTree = "<group>";
@@ -155,6 +175,51 @@
 				183DCD8A1D010F7F00710703 /* MBProgressHUD.bundle */,
 			);
 			path = Until;
+			sourceTree = "<group>";
+		};
+		183DCD911D0111DA00710703 /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				183DCD951D0112CD00710703 /* MyTabBarController.h */,
+				183DCD961D0112CD00710703 /* MyTabBarController.m */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+		183DCD9B1D0116FC00710703 /* Message */ = {
+			isa = PBXGroup;
+			children = (
+				183DCD9C1D01170D00710703 /* MessageViewController.h */,
+				183DCD9D1D01170D00710703 /* MessageViewController.m */,
+			);
+			path = Message;
+			sourceTree = "<group>";
+		};
+		183DCD9F1D01192C00710703 /* Meeting */ = {
+			isa = PBXGroup;
+			children = (
+				183DCDA51D01195300710703 /* MeetingViewController.h */,
+				183DCDA61D01195300710703 /* MeetingViewController.m */,
+			);
+			path = Meeting;
+			sourceTree = "<group>";
+		};
+		183DCDA01D01192C00710703 /* Mine */ = {
+			isa = PBXGroup;
+			children = (
+				183DCDA81D01195C00710703 /* MineViewController.h */,
+				183DCDA91D01195C00710703 /* MineViewController.m */,
+			);
+			path = Mine;
+			sourceTree = "<group>";
+		};
+		183DCDA11D01192C00710703 /* World */ = {
+			isa = PBXGroup;
+			children = (
+				183DCDA21D01194900710703 /* WorldViewController.h */,
+				183DCDA31D01194900710703 /* WorldViewController.m */,
+			);
+			path = World;
 			sourceTree = "<group>";
 		};
 		31DE0BD2D7077955F9772823 /* Frameworks */ = {
@@ -297,12 +362,17 @@
 			buildActionMask = 2147483647;
 			files = (
 				183DCD8B1D010F7F00710703 /* LoginViewController.m in Sources */,
+				183DCDAA1D01195C00710703 /* MineViewController.m in Sources */,
+				183DCD9E1D01170D00710703 /* MessageViewController.m in Sources */,
 				183DCD8E1D010F7F00710703 /* UIView+Category.m in Sources */,
+				183DCD971D0112CD00710703 /* MyTabBarController.m in Sources */,
 				183DCD8C1D010F7F00710703 /* LyCustomLoginTextField.m in Sources */,
 				183DCD8F1D010F7F00710703 /* LyMatchScreen.m in Sources */,
 				183DCD681D010EA700710703 /* AppDelegate.m in Sources */,
 				183DCD651D010EA700710703 /* main.m in Sources */,
+				183DCDA71D01195300710703 /* MeetingViewController.m in Sources */,
 				183DCD8D1D010F7F00710703 /* MyUtil.m in Sources */,
+				183DCDA41D01194900710703 /* WorldViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
