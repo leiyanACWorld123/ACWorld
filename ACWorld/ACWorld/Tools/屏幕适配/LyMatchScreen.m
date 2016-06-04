@@ -111,7 +111,7 @@
 -(CGFloat)autoSizeScaleX
 {
     if(ScreenHeight > 480){
-        _autoSizeScaleX = ScreenWidth/ScreenWidth;
+        _autoSizeScaleX = ScreenWidth/320;
     }else{
         _autoSizeScaleX = 1.0;
     }
@@ -120,7 +120,7 @@
 -(CGFloat)autoSizeScaleY
 {
     if(ScreenHeight > 480){
-        _autoSizeScaleY = ScreenHeight/ScreenHeight;
+        _autoSizeScaleY = ScreenHeight/480;
     }else{
         _autoSizeScaleY = 1.0;
     }
