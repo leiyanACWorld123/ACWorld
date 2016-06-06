@@ -49,6 +49,9 @@
 		183DCDF01D01328000710703 /* CoreTelephony.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 183DCDEF1D01328000710703 /* CoreTelephony.framework */; };
 		183DCDF21D01328A00710703 /* libstdc++.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 183DCDF11D01328A00710703 /* libstdc++.tbd */; };
 		183DCDF41D01329200710703 /* libz.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 183DCDF31D01329200710703 /* libz.tbd */; };
+		183DCF101D0525DA00710703 /* NSObject+Model.m in Sources */ = {isa = PBXBuildFile; fileRef = 183DCF0D1D0525DA00710703 /* NSObject+Model.m */; };
+		183DCF111D0525DA00710703 /* NSObject+Property.m in Sources */ = {isa = PBXBuildFile; fileRef = 183DCF0F1D0525DA00710703 /* NSObject+Property.m */; };
+		183DCF141D05269700710703 /* SkipViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 183DCF131D05269700710703 /* SkipViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -123,6 +126,13 @@
 		183DCDEF1D01328000710703 /* CoreTelephony.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreTelephony.framework; path = System/Library/Frameworks/CoreTelephony.framework; sourceTree = SDKROOT; };
 		183DCDF11D01328A00710703 /* libstdc++.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = "libstdc++.tbd"; path = "usr/lib/libstdc++.tbd"; sourceTree = SDKROOT; };
 		183DCDF31D01329200710703 /* libz.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.tbd; path = usr/lib/libz.tbd; sourceTree = SDKROOT; };
+		183DCF0C1D0525DA00710703 /* NSObject+Model.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+Model.h"; sourceTree = "<group>"; };
+		183DCF0D1D0525DA00710703 /* NSObject+Model.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+Model.m"; sourceTree = "<group>"; };
+		183DCF0E1D0525DA00710703 /* NSObject+Property.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+Property.h"; sourceTree = "<group>"; };
+		183DCF0F1D0525DA00710703 /* NSObject+Property.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+Property.m"; sourceTree = "<group>"; };
+		183DCF121D05269700710703 /* SkipViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SkipViewController.h; sourceTree = "<group>"; };
+		183DCF131D05269700710703 /* SkipViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SkipViewController.m; sourceTree = "<group>"; };
+		183DCF151D0526EE00710703 /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
 		7AA9220AA56B3935FA5950EC /* libPods-ACWorld.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-ACWorld.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A0DD7A2629481DBB3CB2ACF1 /* Pods-ACWorld.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ACWorld.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ACWorld/Pods-ACWorld.debug.xcconfig"; sourceTree = "<group>"; };
 		F31649F27EF1743E1CC71E16 /* Pods-ACWorld.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ACWorld.release.xcconfig"; path = "Pods/Target Support Files/Pods-ACWorld/Pods-ACWorld.release.xcconfig"; sourceTree = "<group>"; };
@@ -221,6 +231,10 @@
 		183DCD7E1D010F7F00710703 /* Tools */ = {
 			isa = PBXGroup;
 			children = (
+				183DCF0C1D0525DA00710703 /* NSObject+Model.h */,
+				183DCF0D1D0525DA00710703 /* NSObject+Model.m */,
+				183DCF0E1D0525DA00710703 /* NSObject+Property.h */,
+				183DCF0F1D0525DA00710703 /* NSObject+Property.m */,
 				183DCD7F1D010F7F00710703 /* LyCustomLoginTextField.h */,
 				183DCD801D010F7F00710703 /* LyCustomLoginTextField.m */,
 				183DCD811D010F7F00710703 /* MyUtil.h */,
@@ -262,8 +276,11 @@
 		183DCD911D0111DA00710703 /* Main */ = {
 			isa = PBXGroup;
 			children = (
+				183DCF121D05269700710703 /* SkipViewController.h */,
+				183DCF131D05269700710703 /* SkipViewController.m */,
 				183DCD951D0112CD00710703 /* MyTabBarController.h */,
 				183DCD961D0112CD00710703 /* MyTabBarController.m */,
+				183DCF151D0526EE00710703 /* PrefixHeader.pch */,
 			);
 			path = Main;
 			sourceTree = "<group>";
@@ -546,6 +563,7 @@
 			files = (
 				183DCD8B1D010F7F00710703 /* LoginViewController.m in Sources */,
 				183DCDAA1D01195C00710703 /* MineViewController.m in Sources */,
+				183DCF111D0525DA00710703 /* NSObject+Property.m in Sources */,
 				183DCD9E1D01170D00710703 /* MessageViewController.m in Sources */,
 				183DCD8E1D010F7F00710703 /* UIView+Category.m in Sources */,
 				183DCD971D0112CD00710703 /* MyTabBarController.m in Sources */,
@@ -553,8 +571,10 @@
 				183DCD8F1D010F7F00710703 /* LyMatchScreen.m in Sources */,
 				183DCD681D010EA700710703 /* AppDelegate.m in Sources */,
 				183DCD651D010EA700710703 /* main.m in Sources */,
+				183DCF101D0525DA00710703 /* NSObject+Model.m in Sources */,
 				183DCDA71D01195300710703 /* MeetingViewController.m in Sources */,
 				183DCD8D1D010F7F00710703 /* MyUtil.m in Sources */,
+				183DCF141D05269700710703 /* SkipViewController.m in Sources */,
 				183DCDA41D01194900710703 /* WorldViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -683,6 +703,7 @@
 					"$(inherited)",
 					"$(PROJECT_DIR)/ACWorld/Until/UMSocial_Sdk_Extra_Frameworks/TencentOpenAPI",
 				);
+				GCC_PREFIX_HEADER = "$(SRCROOT)/ACWorld/Main/PrefixHeader.pch";
 				INFOPLIST_FILE = ACWorld/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				LIBRARY_SEARCH_PATHS = (
@@ -707,6 +728,7 @@
 					"$(inherited)",
 					"$(PROJECT_DIR)/ACWorld/Until/UMSocial_Sdk_Extra_Frameworks/TencentOpenAPI",
 				);
+				GCC_PREFIX_HEADER = "$(SRCROOT)/ACWorld/Main/PrefixHeader.pch";
 				INFOPLIST_FILE = ACWorld/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				LIBRARY_SEARCH_PATHS = (

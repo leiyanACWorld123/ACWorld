@@ -7,11 +7,7 @@
 //
 
 #import "LoginViewController.h"
-#import <Masonry/Masonry.h>
-#import "UIView+Category.h"
 #import "LyCustomLoginTextField.h"
-#import "LyMatchScreen.h"
-#import "MyUtil.h"
 #import "MyTabBarController.h"
 
 #import "UMSocial.h"
