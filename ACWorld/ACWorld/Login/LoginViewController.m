@@ -9,6 +9,7 @@
 #import "LoginViewController.h"
 #import "LyCustomLoginTextField.h"
 #import "MyTabBarController.h"
+#import "NSObject+Model.h"
 
 #import "UMSocial.h"
 

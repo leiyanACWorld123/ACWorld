@@ -10,7 +10,6 @@
 		0BBAC4B265BBF13CDA520D94 /* libPods-ACWorld.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 7AA9220AA56B3935FA5950EC /* libPods-ACWorld.a */; };
 		183DCD651D010EA700710703 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 183DCD641D010EA700710703 /* main.m */; };
 		183DCD681D010EA700710703 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 183DCD671D010EA700710703 /* AppDelegate.m */; };
-		183DCD6E1D010EA700710703 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 183DCD6C1D010EA700710703 /* Main.storyboard */; };
 		183DCD701D010EA700710703 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 183DCD6F1D010EA700710703 /* Assets.xcassets */; };
 		183DCD731D010EA800710703 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 183DCD711D010EA800710703 /* LaunchScreen.storyboard */; };
 		183DCD8B1D010F7F00710703 /* LoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 183DCD7D1D010F7F00710703 /* LoginViewController.m */; };
@@ -52,6 +51,9 @@
 		183DCF101D0525DA00710703 /* NSObject+Model.m in Sources */ = {isa = PBXBuildFile; fileRef = 183DCF0D1D0525DA00710703 /* NSObject+Model.m */; };
 		183DCF111D0525DA00710703 /* NSObject+Property.m in Sources */ = {isa = PBXBuildFile; fileRef = 183DCF0F1D0525DA00710703 /* NSObject+Property.m */; };
 		183DCF141D05269700710703 /* SkipViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 183DCF131D05269700710703 /* SkipViewController.m */; };
+		183DCF3E1D05626F00710703 /* MessageCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 183DCF3D1D05626F00710703 /* MessageCell.m */; };
+		183DCF411D05692000710703 /* MessageChattingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 183DCF401D05692000710703 /* MessageChattingViewController.m */; };
+		183DCF451D056D6000710703 /* PopMenu.m in Sources */ = {isa = PBXBuildFile; fileRef = 183DCF441D056D6000710703 /* PopMenu.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -59,7 +61,6 @@
 		183DCD641D010EA700710703 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		183DCD661D010EA700710703 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		183DCD671D010EA700710703 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		183DCD6D1D010EA700710703 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		183DCD6F1D010EA700710703 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		183DCD721D010EA800710703 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		183DCD741D010EA800710703 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -133,6 +134,12 @@
 		183DCF121D05269700710703 /* SkipViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SkipViewController.h; sourceTree = "<group>"; };
 		183DCF131D05269700710703 /* SkipViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SkipViewController.m; sourceTree = "<group>"; };
 		183DCF151D0526EE00710703 /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
+		183DCF3C1D05626F00710703 /* MessageCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MessageCell.h; sourceTree = "<group>"; };
+		183DCF3D1D05626F00710703 /* MessageCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MessageCell.m; sourceTree = "<group>"; };
+		183DCF3F1D05692000710703 /* MessageChattingViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MessageChattingViewController.h; sourceTree = "<group>"; };
+		183DCF401D05692000710703 /* MessageChattingViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MessageChattingViewController.m; sourceTree = "<group>"; };
+		183DCF431D056D6000710703 /* PopMenu.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PopMenu.h; sourceTree = "<group>"; };
+		183DCF441D056D6000710703 /* PopMenu.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PopMenu.m; sourceTree = "<group>"; };
 		7AA9220AA56B3935FA5950EC /* libPods-ACWorld.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-ACWorld.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A0DD7A2629481DBB3CB2ACF1 /* Pods-ACWorld.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ACWorld.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ACWorld/Pods-ACWorld.debug.xcconfig"; sourceTree = "<group>"; };
 		F31649F27EF1743E1CC71E16 /* Pods-ACWorld.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ACWorld.release.xcconfig"; path = "Pods/Target Support Files/Pods-ACWorld/Pods-ACWorld.release.xcconfig"; sourceTree = "<group>"; };
@@ -191,7 +198,6 @@
 				183DCD7B1D010F7F00710703 /* Login */,
 				183DCD661D010EA700710703 /* AppDelegate.h */,
 				183DCD671D010EA700710703 /* AppDelegate.m */,
-				183DCD6C1D010EA700710703 /* Main.storyboard */,
 				183DCD6F1D010EA700710703 /* Assets.xcassets */,
 				183DCD711D010EA800710703 /* LaunchScreen.storyboard */,
 				183DCD741D010EA800710703 /* Info.plist */,
@@ -288,8 +294,13 @@
 		183DCD9B1D0116FC00710703 /* Message */ = {
 			isa = PBXGroup;
 			children = (
+				183DCF421D056D4100710703 /* popMenu */,
+				183DCF3C1D05626F00710703 /* MessageCell.h */,
+				183DCF3D1D05626F00710703 /* MessageCell.m */,
 				183DCD9C1D01170D00710703 /* MessageViewController.h */,
 				183DCD9D1D01170D00710703 /* MessageViewController.m */,
+				183DCF3F1D05692000710703 /* MessageChattingViewController.h */,
+				183DCF401D05692000710703 /* MessageChattingViewController.m */,
 			);
 			path = Message;
 			sourceTree = "<group>";
@@ -400,6 +411,15 @@
 			path = Wechat;
 			sourceTree = "<group>";
 		};
+		183DCF421D056D4100710703 /* popMenu */ = {
+			isa = PBXGroup;
+			children = (
+				183DCF431D056D6000710703 /* PopMenu.h */,
+				183DCF441D056D6000710703 /* PopMenu.m */,
+			);
+			name = popMenu;
+			sourceTree = "<group>";
+		};
 		31DE0BD2D7077955F9772823 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -501,7 +521,6 @@
 				183DCDDD1D012FBB00710703 /* UMSShareListController.xib in Resources */,
 				183DCDD41D012FBB00710703 /* UMSocialLocalizable.strings in Resources */,
 				183DCD701D010EA700710703 /* Assets.xcassets in Resources */,
-				183DCD6E1D010EA700710703 /* Main.storyboard in Resources */,
 				183DCDDB1D012FBB00710703 /* UMSLoginViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -565,6 +584,7 @@
 				183DCDAA1D01195C00710703 /* MineViewController.m in Sources */,
 				183DCF111D0525DA00710703 /* NSObject+Property.m in Sources */,
 				183DCD9E1D01170D00710703 /* MessageViewController.m in Sources */,
+				183DCF411D05692000710703 /* MessageChattingViewController.m in Sources */,
 				183DCD8E1D010F7F00710703 /* UIView+Category.m in Sources */,
 				183DCD971D0112CD00710703 /* MyTabBarController.m in Sources */,
 				183DCD8C1D010F7F00710703 /* LyCustomLoginTextField.m in Sources */,
@@ -572,8 +592,10 @@
 				183DCD681D010EA700710703 /* AppDelegate.m in Sources */,
 				183DCD651D010EA700710703 /* main.m in Sources */,
 				183DCF101D0525DA00710703 /* NSObject+Model.m in Sources */,
+				183DCF451D056D6000710703 /* PopMenu.m in Sources */,
 				183DCDA71D01195300710703 /* MeetingViewController.m in Sources */,
 				183DCD8D1D010F7F00710703 /* MyUtil.m in Sources */,
+				183DCF3E1D05626F00710703 /* MessageCell.m in Sources */,
 				183DCF141D05269700710703 /* SkipViewController.m in Sources */,
 				183DCDA41D01194900710703 /* WorldViewController.m in Sources */,
 			);
@@ -582,14 +604,6 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		183DCD6C1D010EA700710703 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				183DCD6D1D010EA700710703 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		183DCD711D010EA800710703 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
