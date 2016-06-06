@@ -64,11 +64,6 @@
 {
     return  [UMSocialSnsService handleOpenURL:url wxApiDelegate:nil];
 }
-//- (BOOL)application:(UIApplication *)application handleOpenURL:(NSURL *)url
-//{
-//    return  [UMSocialSnsService handleOpenURL:url];
-//}
-
 - (BOOL)application:(UIApplication *)application openURL:(nonnull NSURL *)url options:(nonnull NSDictionary<NSString *,id> *)options
 {
     return  [UMSocialSnsService handleOpenURL:url];
