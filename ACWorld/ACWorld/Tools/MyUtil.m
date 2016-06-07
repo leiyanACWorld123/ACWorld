@@ -246,10 +246,10 @@
 }
 
 #pragma mark - 生成纯色图片
-+(UIImage *)createImageFromColor:(UIColor *)color imgSize:(CGSize)size
++(UIImage *)createImageFromColor:(UIColor *)color
 {
-    CGRect frame = CGRectMake(0, 0, size.width, size.height);
-    UIGraphicsBeginImageContext(size);
+    CGRect frame = CGRectMake(0, 0, 1, 1);
+    UIGraphicsBeginImageContext(CGSizeMake(1, 1));
     CGContextRef context = UIGraphicsGetCurrentContext();
     CGContextSetFillColorWithColor(context, color.CGColor);
     CGContextFillRect(context, frame);
@@ -265,5 +265,53 @@
     [resultImage drawInRect:CGRectMake(0, 0, size.width, size.height)];
     UIGraphicsEndImageContext();
     return resultImage;
+}
+
++(NSArray<UIBarButtonItem *> *)leftBarButtonTarget:(id)target action:(SEL)action type:(UIBarButtonItemLeftType)type{
+    
+    if(type == UIBarButtonItemLeftTypeSingle){
+        UIButton *leftButton = [UIButton buttonWithType:UIButtonTypeCustom];
+        [leftButton addTarget:target action:action forControlEvents:UIControlEventTouchUpInside];
+        leftButton.frame = CGRectMake(-20, 0, 44, 44);
+        leftButton.backgroundColor = [UIColor greenColor];
+        UIBarButtonItem *leftBarButton = [[UIBarButtonItem alloc]initWithCustomView:leftButton];
+        UIBarButtonItem *negativeSpacer = [[UIBarButtonItem alloc]initWithBarButtonSystemItem:UIBarButtonSystemItemFixedSpace target:nil action:nil];
+        negativeSpacer.width = -20;
+        return @[negativeSpacer,leftBarButton];
+    }else{
+        
+        UIView *leftView = [UIView new];
+        leftView.frame = CGRectMake(-20, 0, 100, 44);
+        leftView.backgroundColor = [UIColor greenColor];
+        
+        UIButton *leftButton = [UIButton buttonWithType:UIButtonTypeCustom];
+        [leftButton addTarget:target action:action forControlEvents:UIControlEventTouchUpInside];
+        leftButton.frame = CGRectMake(0, 0, 44, 44);
+        leftButton.backgroundColor = [UIColor redColor];
+        [leftView addSubview:leftButton];
+        
+        UIImageView *imgView = [[UIImageView alloc]init];
+        imgView.frame = CGRectMake(leftButton.bounds.size.width, 0, 44, 44);
+        imgView.layer.cornerRadius = imgView.bounds.size.width / 2;
+        imgView.layer.masksToBounds = YES;
+        imgView.image = [MyUtil createImageFromColor:[UIColor orangeColor]];
+        [leftView addSubview:imgView];
+        
+        UIBarButtonItem *leftBarButton = [[UIBarButtonItem alloc]initWithCustomView:leftView];
+        UIBarButtonItem *negativeSpacer = [[UIBarButtonItem alloc]initWithBarButtonSystemItem:UIBarButtonSystemItemFixedSpace target:nil action:nil];
+        negativeSpacer.width = -20;
+        return @[negativeSpacer,leftBarButton];
+    }
+}
+
++(UIBarButtonItem *)rightBarButtonTarget:(id)target action:(SEL)action{
+    UIButton *button = [UIButton buttonWithType:UIButtonTypeCustom];
+    button.bounds = CGRectMake(0, 0, 44, 44);
+    button.contentEdgeInsets = UIEdgeInsetsMake(0, 0, 0, -44);
+    [button setTitle:@"+" forState:UIControlStateNormal];
+    [button setTitleColor:[UIColor whiteColor] forState:UIControlStateNormal];
+    [button addTarget:target action:action forControlEvents:UIControlEventTouchUpInside];
+    UIBarButtonItem *rightBarButtonItem = [[UIBarButtonItem alloc]initWithCustomView:button];
+    return rightBarButtonItem;
 }
 @end

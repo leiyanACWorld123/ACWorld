@@ -16,7 +16,7 @@
         [self.contentView addSubview:_headerIcon];
         _headerIcon.layer.cornerRadius = 40;
         _headerIcon.layer.masksToBounds = YES;
-        _headerIcon.image = [MyUtil createImageFromColor:[UIColor redColor] imgSize:CGSizeMake(1, 1)];
+        _headerIcon.image = [MyUtil createImageFromColor:[UIColor redColor]];
         
         _name = [[UILabel alloc]init];
         _name.font = [UIFont systemFontOfSize:20.f];

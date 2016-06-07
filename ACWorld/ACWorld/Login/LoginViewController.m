@@ -95,7 +95,7 @@ static NSInteger count = 30;
     [loginBtn setTitle:@"登录" forState:UIControlStateNormal];
     loginBtn.titleLabel.font = [UIFont systemFontOfSize:20.f];
     [loginBtn setTitleColor:[UIColor whiteColor] forState:UIControlStateNormal];
-    [loginBtn setBackgroundImage:[MyUtil createImageFromColor:[UIColor colorWithRed:92/255.0 green:9/255.0 blue:16/255.0 alpha:1] imgSize:CGSizeMake(1, 1)] forState:UIControlStateNormal];
+    [loginBtn setBackgroundImage:[MyUtil createImageFromColor:[UIColor colorWithRed:92/255.0 green:9/255.0 blue:16/255.0 alpha:1]] forState:UIControlStateNormal];
     loginBtn.layer.cornerRadius = 5.f;
     loginBtn.layer.masksToBounds = YES;
     [self.view addSubview:loginBtn];

@@ -9,7 +9,12 @@
 #import "MessageChattingViewController.h"
 #import "PopMenu.h"
 
-@interface MessageChattingViewController ()
+@interface MessageChattingViewController ()<PopMenuDelegate>
+{
+    BOOL _isOpen;
+}
+
+@property (nonatomic,strong) PopMenu *popMenu;
 
 @end
 
@@ -25,17 +30,60 @@
 }
 - (void)viewDidLoad {
     [super viewDidLoad];
+
+    self.navigationItem.rightBarButtonItem = [MyUtil rightBarButtonTarget:self action:@selector(popView)];
+    self.navigationItem.leftBarButtonItems = [MyUtil leftBarButtonTarget:self action:@selector(back) type:UIBarButtonItemLeftTypeDouble];
     
-    UIButton *button = [UIButton buttonWithType:UIButtonTypeCustom];
-    button.bounds = CGRectMake(0, 0, 42, 42);
-    button.contentEdgeInsets = UIEdgeInsetsMake(0, 0, 0, -42);
-    [button setTitle:@"+" forState:UIControlStateNormal];
-    [button setTitleColor:[UIColor whiteColor] forState:UIControlStateNormal];
-    self.navigationItem.rightBarButtonItem = [[UIBarButtonItem alloc]initWithCustomView:button];
-    [button addTarget:self action:@selector(popView) forControlEvents:UIControlEventTouchUpInside];
+    //修改导航栏头像
+    [self.navigationItem.leftBarButtonItems[1].customView.subviews enumerateObjectsUsingBlock:^(__kindof UIView * _Nonnull obj, NSUInteger idx, BOOL * _Nonnull stop) {
+        if([obj isKindOfClass:[UIImageView class]]){
+            UIImageView *img = (UIImageView *)obj;
+            img.image = [MyUtil createImageFromColor:[UIColor blueColor]];
+        }
+    }];
 }
 
 -(void)popView{
-    [PopMenu showIn:self.view];
+    
+    _isOpen = !_isOpen;
+    
+    if(!_popMenu){
+        _popMenu = [[PopMenu alloc]init];
+    }
+    
+    _isOpen == YES ? [_popMenu showIn:self.view delegate:self] : [PopMenu hideIn:self.view];
+}
+
+
+#pragma -mark PopMenu Delegate
+-(void)centerPhotos:(PopMenu *)popMenu{
+    NSLog(@"相册");
+}
+
+-(void)centerAVChart:(PopMenu *)popMenu{
+    NSLog(@"视频聊天");
+}
+
+-(void)centerPosition:(PopMenu *)popMenu{
+    NSLog(@"位置");
+}
+
+-(void)centerACMemony:(PopMenu *)popMenu{
+    NSLog(@"AC币");
+}
+
+-(void)centerCamera:(PopMenu *)popMenu{
+    NSLog(@"相机");
+}
+
+-(void)centerMore:(PopMenu *)popMenu{
+    NSLog(@"更多");
+}
+
+
+#pragma -mark back
+
+-(void)back{
+    [self.navigationController popViewControllerAnimated:YES];
 }
 @end

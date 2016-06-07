@@ -33,6 +33,15 @@ typedef NS_ENUM(NSUInteger,AFNetworkErrorType){
     AFNetworkErrorType_3840Failed = 3840                                //请求或者返回不是Json格式
 };
 
+
+/**
+ *  导航栏左边按钮样式
+ */
+typedef NS_ENUM(NSUInteger,UIBarButtonItemLeftType) {
+    UIBarButtonItemLeftTypeSingle, //单一的一张图片
+    UIBarButtonItemLeftTypeDouble  //两张图片
+};
+
 @interface MyUtil : NSObject
 
 /**** MBProgressHUD ****/
@@ -118,7 +127,14 @@ typedef NS_ENUM(NSUInteger,AFNetworkErrorType){
 +(BOOL)mobilePhone:(NSString *)mobile;
 
 /**** 生成纯色图片 ****/
-+(UIImage *)createImageFromColor:(UIColor *)color imgSize:(CGSize)size;
++(UIImage *)createImageFromColor:(UIColor *)color;
 /**** 压缩图片到指定尺寸 ****/
-+ (UIImage *)compressOriginalImage:(UIImage *)image toSize:(CGSize)size;
++(UIImage *)compressOriginalImage:(UIImage *)image toSize:(CGSize)size;
+
+//导航栏左边按钮
++(NSArray<UIBarButtonItem *>*)leftBarButtonTarget:(id)target action:(SEL)action type:(UIBarButtonItemLeftType)type;
+
+//导航栏右边按钮
++(UIBarButtonItem *)rightBarButtonTarget:(id)target action:(SEL)action;
+
 @end
